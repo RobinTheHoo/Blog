@@ -43,12 +43,12 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
-	header {
-		margin: 0 20%;
-		padding: 0 1em;
+	header {		
 		background-color: var(--background);
+
+		border-bottom: 1px solid var(--gray-1);
 	}
-	
+
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -58,7 +58,11 @@ import { SITE_TITLE } from '../consts';
 	h2 a.active {
 		text-decoration: none;
 	}
+
 	nav {
+		margin: 0 20%;
+		padding: 0 1em;
+
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
