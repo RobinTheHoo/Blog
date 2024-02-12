@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer>
 	<div class="footer-margins">
-		<p>&copy; {today.getFullYear()} RobinTheHoo. All rights reserved.</p>
+		<p class="copyright">&copy; {today.getFullYear()} RobinTheHoo. All rights reserved.</p>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
@@ -52,20 +52,23 @@ const today = new Date();
 	}
 
 	.footer-margins{
-		width: 720px;
-		max-width: calc(100%-2em);
-		margin: 0 auto;
+		margin: 0 20%;
 
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	.copyright{
+		margin:0;
+	}
+
 	.social-links {
 		display: flex;
 		justify-content: center;
 		gap: 1em;
-		/* margin-top: 1em; */
+		margin: 0;
 	}
 	.social-links a {
 		text-decoration: none;
