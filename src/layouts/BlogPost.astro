@@ -5,10 +5,15 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, author, tag1, tag2, tag3 } = Astro.props;
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 ---
 
 <html lang="en">
@@ -63,6 +68,12 @@ const { title, description, pubDate, updatedDate, heroImage, author, tag1, tag2,
 				color: var(--tags);
 				margin: 0.3em 1em 0.3em 0;
 			}
+			.other-posts{
+				display: flex;
+			}
+			.post{
+				max-width: 30%;
+			}
 		</style>
 	</head>
 
@@ -103,6 +114,21 @@ const { title, description, pubDate, updatedDate, heroImage, author, tag1, tag2,
 				</div>
 			</article>
 		</main>
+		<section class="other-posts">
+			{
+				posts.map((post) => (
+					<div class="post">
+						<a href={`/Blog/blog/${post.slug}/`}>
+							<img src={post.data.heroImage} alt="" />
+							<h4 class="title">{post.data.title}</h4>
+							<p class="date">
+								<FormattedDate date={post.data.pubDate} />
+							</p>
+						</a>
+					</div>
+				))
+			}
+		</section>
 		<Footer />
 	</body>
 </html>
