@@ -70,7 +70,11 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.other-posts{
 				display: flex;
-				width: 100%;
+				
+				max-width: 100%;
+				width: calc(100% - 2em);
+				margin: 0;
+				
 				flex-wrap: wrap;
 			}
 			.post{
