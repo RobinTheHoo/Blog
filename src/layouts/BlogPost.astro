@@ -135,7 +135,7 @@ const posts = (await getCollection('blog')).sort(
 							</p>
 						</a>
 					</div>
-				))
+				).slice(0,3))
 			}
 		</section>
 		<Footer />
