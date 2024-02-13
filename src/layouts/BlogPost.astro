@@ -73,7 +73,11 @@ const posts = (await getCollection('blog')).sort(
 				width: calc(100% - 2em);
 				margin: 0;
 			}
-			
+			section h3{
+				width: 1020px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+			}
 			.wrapper{
 				display: flex;
 				justify-content: space-between;
@@ -130,8 +134,8 @@ const posts = (await getCollection('blog')).sort(
 		<hr />
 		
 		<section class="other-posts">
+			<h3>See Also</h2>
 			<div class="wrapper">
-				<h3>See Also</h2>
 				{
 					posts.slice(0,3).map((post) => (
 						<div class="post">
