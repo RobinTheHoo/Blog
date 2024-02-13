@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<!doctype html>
+<html>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>Colophon</h1>
+            <p>
+                <code>blog</code> is designed and developed by Ved Dave (RobinTheHoo), with writings
+                from various friends.<br>
+                Typeset in SF Pro<br>
+                Essential tools used in prouction:
+                <ul>
+                    <li>HTML generation: <a href="https://astro.build/">Astro</a></li>
+                    <li>Version Control: <a href="https://git-scm.com/">Git</a> and <a href="https://github.com/">Github</a></li>
+                    <li>Build, deployment and hosting: <a href="https://github.com/features/actions">Github Actions</a></li>
+                </ul>
+            </p>
+        </main>
+        <Footer />
+    </body>
+</html>
