@@ -38,6 +38,8 @@ const posts = (await getCollection('blog')).sort(
 				width: 1020px;
 				max-width: calc(100% - 2em);
 				margin: 0 auto;
+
+				border-bottom: 1px solid var(--gray-1);
 			}
 			.prose {
 				width: 100%;
@@ -76,7 +78,7 @@ const posts = (await getCollection('blog')).sort(
 			section h3{
 				width: 1020px;
 				max-width: calc(100% - 2em);
-				margin: 0 auto;
+				margin: 0;
 			}
 			.wrapper{
 				display: flex;
