@@ -73,12 +73,13 @@ const posts = (await getCollection('blog')).sort(
 			.other-posts{
 				max-width: 100%;
 				width: calc(100% - 2em);
-				margin: 0;
+				margin: 0 0 1em 0;
 			}
-			section h3{
+			section > h3{
 				width: 1020px;
 				max-width: calc(100% - 2em);
 				margin: 0;
+				padding: 0 1em;
 			}
 			.wrapper{
 				display: flex;
@@ -92,6 +93,9 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.post{
 				max-width: 30%;
+			}
+			.post > img{
+
 			}
 		</style>
 	</head>
