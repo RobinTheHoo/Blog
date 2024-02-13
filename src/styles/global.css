@@ -16,6 +16,8 @@
 		0 16px 32px rgba(var(--gray), 33%);
 
 	--background: #272E33;
+	--bg-1: #374145;
+	--bg-green: #3C4841;
 	--post-title: #E69875;
 	--gray-0: #7A8478;
 	--gray-1: #859289;
@@ -89,13 +91,14 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--tags);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--tags);
 }
 p {
 	margin-bottom: 1em;
+	color: var(--post-text);
 }
 .prose p {
 	margin-bottom: 2em;
@@ -117,7 +120,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: var(--bg-1);
 	border-radius: 2px;
 }
 pre {
@@ -128,7 +131,7 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
+	border-left: 4px solid var(--bg-green);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
@@ -137,6 +140,7 @@ hr {
 	border: none;
 	border-top: 1px solid var(--gray-1);
 }
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
