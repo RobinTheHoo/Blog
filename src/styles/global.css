@@ -46,7 +46,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--post-text);
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.7;
 
 	min-height: 100vh;
@@ -160,7 +160,7 @@ hr {
 
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	main {
 		padding: 1em;
