@@ -11,7 +11,7 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/Blog/blog">Blog</HeaderLink>
 			<HeaderLink href="/Blog/about">About</HeaderLink>
 		</div>
-		<div class="social-links">
+		<!-- <div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -39,7 +39,7 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
-		</div>
+		</div> -->
 	</nav>
 </header>
 <style>
@@ -67,6 +67,7 @@ import { SITE_TITLE } from '../consts';
 		align-items: center;
 		justify-content: space-between;
 	}
+	
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
@@ -77,10 +78,11 @@ import { SITE_TITLE } from '../consts';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
+	/* .social-links,
 	.social-links a {
 		display: flex;
-	}
+	} */
+	
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;

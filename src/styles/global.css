@@ -65,6 +65,8 @@ main {
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
+	
+	flex-grow: 1;
 }
 h1,
 h2,
