@@ -68,12 +68,13 @@ const posts = (await getCollection('blog')).sort(
 				color: var(--tags);
 				margin: 0.3em 1em 0.3em 0;
 			}
-			.other-posts{
+			section{
 				display: flex;
+				justify-content: space-between;
 				
-				max-width: 100%;
-				width: calc(100% - 2em);
-				margin: 0;
+				width: 1020px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
 				
 				flex-wrap: wrap;
 			}
