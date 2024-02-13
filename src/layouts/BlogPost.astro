@@ -70,6 +70,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.other-posts{
 				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
 			}
 			.post{
 				max-width: 30%;
@@ -114,6 +116,8 @@ const posts = (await getCollection('blog')).sort(
 				</div>
 			</article>
 		</main>
+		<hr />
+		<h3>See Also</h2>
 		<section class="other-posts">
 			{
 				posts.map((post) => (
