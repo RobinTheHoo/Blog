@@ -103,6 +103,15 @@ p {
 .prose p {
 	margin-bottom: 2em;
 }
+
+ul {
+	color: var(--post-text);
+}
+
+ul::marker {
+	color: var(--post-text);
+}
+
 textarea {
 	width: 100%;
 	font-size: 16px;
