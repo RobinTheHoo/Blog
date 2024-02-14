@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import '../styles/BlogPost.css';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
@@ -75,18 +75,18 @@ const posts = (await getCollection('blog')).sort(
 				grid-column: 2;
 			}
 			section > h3{
-				width: 1020px;
+				/* width: 1020px;
 				max-width: calc(100% - 2em);
-				margin: 0 auto 1em auto;
+				margin: 0 auto 1em auto; */
 				
 			}
 			.wrapper{
 				display: flex;
 				justify-content: space-between;
 				
-				width: 1020px;
+				/* width: 1020px;
 				max-width: calc(100% - 2em);
-				margin: 0 auto;
+				margin: 0 auto; */
 				
 				flex-wrap: wrap;
 			}
@@ -139,7 +139,7 @@ const posts = (await getCollection('blog')).sort(
 				</div>
 			</article>
 		</main>
-		<hr />		
+				
 		<aside class="other-posts">
 			<h3>See Also</h2>
 			<div class="wrapper">
