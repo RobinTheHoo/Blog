@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 const allPosts = await getCollection('blog');
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
-<aside class="tag-index">
+<nav class="tag-index">
+    <h2>Tags</h2>
+    
     {
         tags.map((tag) => (
           <p class="tag">
@@ -12,4 +14,11 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
           </p>
         ))
       }
-</aside>
+</nav>
+
+<style>
+  .tag-index{
+    grid-row: 2;
+    grid-column: 1;
+  }
+</style>
