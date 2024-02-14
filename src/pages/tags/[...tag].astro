@@ -1,5 +1,4 @@
 ---
-import TagIndex from '../../components/TagIndex.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -31,7 +30,7 @@ const { posts } = Astro.props;
             {
                 posts.map((post) => (
                     <li>
-                        <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                        <a href={`/Blog/blog/${post.slug}`}>{post.data.title}</a>
                     </li>
                 ))
             }
