@@ -1,4 +1,4 @@
-:root {
+ :root {
 	--background: #272E33;
 	--bg-1: #374145;
 	--bg-green: #3C4841;
@@ -29,7 +29,7 @@
 body {
 	font-family: "FiraCode Nerd Font", "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
-	padding: 0 15%;
+	padding: 0 20%;
 	text-align: left;
 	background-color: var(--background);
 	/* background-size: 100% 600px; */
@@ -45,7 +45,7 @@ body {
 	/* flex-direction: column; */
 
 	display: grid;
-	grid-template-rows: 4rem 1fr 2rem;
+	grid-template-rows: 4rem 3fr 1fr 2rem;
 	grid-template-columns: 1fr 3fr;
 }
 
@@ -59,8 +59,9 @@ main {
 	grid-column: 2;
 	/* flex-grow: 1; */
 }
-.tag-index {
-    grid-row: 2;
+
+.post-content {
+    grid-row: 2/4;
     grid-column: 1;
 }
 
