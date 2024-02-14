@@ -1,5 +1,5 @@
 ---
-import '../styles/BlogPost.css';
+import '../styles/blogpost.css';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
@@ -108,6 +108,7 @@ const posts = (await getCollection('blog')).sort(
 		<nav class="post-content">
 			<h2>Contents of post</h2>
 		</nav>
+
 		<main>
 			<article>
 				<div class="title">
