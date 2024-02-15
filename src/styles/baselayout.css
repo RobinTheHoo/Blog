@@ -61,6 +61,10 @@ main {
 	flex-direction: row;
 }
 
+.blog-post-description {
+	margin: 0;
+}
+
 .blog-post-container:hover h3{
 	color: var(--subtle);
 }
