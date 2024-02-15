@@ -11,6 +11,18 @@
 	font-family: 'Switzer-Regular';
 	src: url('/fonts/Switzer-Regular.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'Tiltorion';
+	src: url('/fonts/Tiltorion.otf');
+}
+@font-face {
+	font-family: 'FUNGIS Regular';
+	src: url('/fonts/FUNGIS Regular.woff2');
+}
+@font-face {
+	font-family: 'UncutSans-Regular';
+	src: url('fonts/UncutSans-Regular.woff2');
+}
 
 :root {
 	--color-bg: #100f0f;
@@ -28,6 +40,8 @@
 
     --font-headings: "GeneralSans-Medium", Roboto, sans-serif;
     --font-body: "Switzer-Regular", sans-serif;
+	--font-display: "FUNGIS Regular", sans-serif;
+	--font-quirk: "Tiltortion", serif;
 }
 
 html {
