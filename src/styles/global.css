@@ -12,8 +12,8 @@
 	src: url('/fonts/Switzer-Regular.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Tiltorion';
-	src: url('/fonts/Tiltorion.otf') format('otf');
+	font-family: 'Tiltortion';
+	src: url('/fonts/Tiltortion.otf') format('otf');
 }
 @font-face {
 	font-family: 'FUNGIS Regular';
@@ -70,7 +70,6 @@ body {
 
 	min-height: 100vh;
 
-	/* border-top: 3px solid var(--subtle); */
 	border-left: 1px solid var(--subtle);
 	border-right: 1px solid var(--subtle);
 }
