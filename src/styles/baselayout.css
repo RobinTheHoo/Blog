@@ -29,6 +29,13 @@ main {
 }
 
 .blog-meta-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+.blog-meta {
 	color: var(--overlay);
 }
 

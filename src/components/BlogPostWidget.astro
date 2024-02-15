@@ -13,8 +13,8 @@ const allPosts = await getCollection('blog');
                         <FormattedDate date={post.data.pubDate} />
                     </p>
                     <p class="blog-meta">{post.data.author}</p>
-                    <p class="blog-meta">{post.data.tags}</p>
                 </div>
+                <p class="blog-meta">{post.data.tags}</p>
                 <h3>{post.data.title}</h3>               
             </div>           
         </a>
