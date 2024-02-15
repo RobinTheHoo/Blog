@@ -9,7 +9,7 @@ import '../styles/BlogPost.css';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, author, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, author, tags } = Astro.props;
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -111,23 +111,16 @@ const posts = (await getCollection('blog')).sort(
 					<h1>{title}</h1>
 					<div class="post-metadata">
 						<span class="author">{author}</span>
+						<span class="divider">|</p>
 						<div class="date">
 							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						
+						</div>						
 					</div>												
 					<hr />
 					<div class="tags">
 						{
 							tags.map((tag) => (
-								<span class="tag">{tag}</span>
+								<p class="tag">{tag}</span>
 							))
 						}
 					</div>
@@ -143,7 +136,7 @@ const posts = (await getCollection('blog')).sort(
 			<h3>See Also</h2>
 			<div class="wrapper">
 				{
-					posts.slice(0,3).map((post) => (
+					posts.slice(0,2).map((post) => (
 						<div class="post">
 							<a href={`/Blog/blog/${post.slug}/`}>
 								<img src={post.data.heroImage} alt="" />

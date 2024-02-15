@@ -11,13 +11,29 @@ main {
 	max-width: 70%;
 }
 
+.post-metadata {
+	display: flex;
+	flex: row;
+	padding-right: 1em;
+	color: var(--muted);
+}
+
+.tag{
+	color: var(--pine);
+	margin: .3em;
+}
+
 .post-content {
     grid-row: 2/4;
     grid-column: 1;
 
-	padding: 0 0 0 2.5em;
+	padding: 0 0 0 1em;
 
 	max-width: 80%;
+}
+
+.other-posts {
+	max-width: 70%;
 }
 
 footer{
