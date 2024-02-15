@@ -9,6 +9,15 @@ main {
 	grid-column: 2;
 }
 
+.top-rect {
+	background-color: var(--base);
+	z-index: 999;
+	margin: 0;
+	padding: 1em 0;
+	position: sticky;
+	top: 0;
+}
+
 .tag-index {
     grid-row: 2;
     grid-column: 1;
