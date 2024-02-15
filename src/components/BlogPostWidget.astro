@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content"
+import FormattedDate from "./FormattedDate.astro";
+
+const allPosts = await getCollection('blog');
+---
+{
+    allPosts.map((post) => (
+        <h3>{post.data.title}</h3>
+        <p class="date">
+            <FormattedDate date={post.data.pubDate} />
+        </p>
+        <p>{post.data.author}</p>
+    ))
+}
