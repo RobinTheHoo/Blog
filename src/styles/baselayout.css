@@ -65,7 +65,7 @@ main {
 	margin: 0;
 }
 
-.blog-post-container:hover h3{
+.blog-post-container h3:hover{
 	color: var(--subtle);
 }
 

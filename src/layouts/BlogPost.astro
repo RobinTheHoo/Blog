@@ -9,7 +9,7 @@ import '../styles/BlogPost.css';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, author, tag1, tag2, tag3 } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, author, tags } = Astro.props;
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -125,9 +125,11 @@ const posts = (await getCollection('blog')).sort(
 					</div>												
 					<hr />
 					<div class="tags">
-						<span class="tag">{tag1}</span>
-						<span class="tag">{tag2}</span>
-						<span class="tag">{tag3}</span>
+						{
+							tags.map((tag) => (
+								<span class="tag">{tag}</span>
+							))
+						}
 					</div>
 					<hr />
 				</div>
