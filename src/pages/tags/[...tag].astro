@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -25,16 +26,30 @@ const { posts } = Astro.props;
 ---
 <BaseLayout pageTitle="{tag}">
     <main>
-        <p>Posts tagged with {tag}</p>
-        <ul>
-            {
-                posts.map((post) => (
-                    <li>
-                        <a href={`/Blog/blog/${post.slug}`}>{post.data.title}</a>
-                    </li>
-                ))
-            }
-        </ul>
+        <h1>Posts tagged with {tag}</h1>
+        {
+          posts.map((post) => (              
+              <div class="blog-post-container">
+                  <div class="blog-meta-container">
+                      <p class="blog-meta">
+                          <FormattedDate date={post.data.pubDate} />
+                      </p>
+                      <p class="blog-meta">{post.data.author}</p>
+                  </div>
+                  <div class="blog-tag-container">
+                  {
+                      post.data.tags.map((tag) => (
+                          <p class="blog-meta">{tag}</p>
+                      ))
+                  }
+                  </div>
+                  <a href={`/Blog/blog/${post.slug}/`}>
+                      <h3>{post.data.title}</h3>
+                      <p>{post.data.description}</p>
+                  </a>         
+              </div>                  
+          ))
+      }
     </main>
 </BaseLayout>
 
