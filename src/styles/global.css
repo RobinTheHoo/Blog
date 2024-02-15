@@ -33,19 +33,6 @@
 }
 
 :root {
-	--color-bg: #100f0f;
-    --color-text: #FCECEC;
-
-	--bg-1: #374145;
-	--bg-green: #3C4841;
-	--post-title: #E69875;
-	--gray-0: #7A8478;
-	--gray-1: #859289;
-	--accent-color: #D699B6;
-	--author: #E67E80;
-	--tags: #DBBC7F;
-	--post-text: #A7C080;
-
 	--base: #191724;
 	--surface: #26233a;
 	--overlay: #26233a;

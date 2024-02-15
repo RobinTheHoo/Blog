@@ -6,16 +6,17 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 <nav class="tag-index">
     <h2>Tags</h2>
-    
+    <ul class="tags-list"></ul>
     {
-        tags.map((tag) => (
-          <ul class="tags-list">
-            <li class="tag">
-              <a href={`/Blog/tags/${tag}`}>{tag}</a>
-            </li>
-          </ul>
-        ))
-      }
+      tags.map((tag) => (
+        
+          <li class="tag">
+            <a href={`/Blog/tags/${tag}`}>{tag}</a>
+          </li>
+        
+      ))
+    }
+    </ul>
 </nav>
 
 <style>
@@ -23,5 +24,9 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
+  }
+  .tag {
+    padding-right: 1.5em;
   }
 </style>
