@@ -29,7 +29,7 @@
 }
 @font-face {
 	font-family: 'NeueKonstantGrotesk-Book';
-	src: url('/fonts/NeueKonstantGrotesk-Book.otf') format('otf');
+	src: url('/fonts/NeueKonstantGrotesk-Book.otf');
 }
 
 :root {

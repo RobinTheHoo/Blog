@@ -31,10 +31,8 @@ const posts = (await getCollection('blog')).sort(
 			<article>
 				<div class="title">
 					<h1>{title}</h1>
-					<div class="post-metadata">
-						<div class="author">{author}</div>
-						<div class="divider">|</div>
-						<div class="date">
+					<div class="post-metadata-wrapper">
+						<div class="post-metadata">
 							<FormattedDate date={pubDate} />
 							{
 								updatedDate && (
@@ -43,7 +41,9 @@ const posts = (await getCollection('blog')).sort(
 									</div>
 								)
 							}
-						</div>						
+						</div>
+						<div class="post-metadata">|</div>
+						<div class="post-metadata">{author}</div>				
 					</div>												
 					<hr />
 					<div class="tags">
