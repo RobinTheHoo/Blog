@@ -21,7 +21,15 @@
 }
 @font-face {
 	font-family: 'UncutSans-Regular';
-	src: url('fonts/UncutSans-Regular.woff2');
+	src: url('/fonts/UncutSans-Regular.woff2');
+}
+@font-face {
+	font-family: 'UncutSans-Bold';
+	src: url('/fonts/UncutSans-Bold.woff2');
+}
+@font-face {
+	font-family: 'NeueKonstantGrotesk-Book';
+	src: url('/fonts/NeueKonstantGrotesk-Book.otf');
 }
 
 :root {
@@ -38,9 +46,9 @@
 	--tags: #DBBC7F;
 	--post-text: #A7C080;
 
-    --font-headings: "GeneralSans-Medium", Roboto, sans-serif;
-    --font-body: "Switzer-Regular", sans-serif;
-	--font-display: "FUNGIS Regular", sans-serif;
+    --font-headings: "UncutSans-Bold", Roboto, sans-serif;
+    --font-body: "UncutSans-Regular", sans-serif;
+	--font-display: "NeueKonstantGrotesk-Book", sans-serif;
 	--font-quirk: "Tiltortion", serif;
 }
 
