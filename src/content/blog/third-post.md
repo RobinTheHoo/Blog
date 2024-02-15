@@ -1,5 +1,5 @@
 ---
-title: 'Third post'
+title: 'Not for you Third post sorry, cry more'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
 heroImage: '/Blog/blog-placeholder-2.jpg'

@@ -1,5 +1,5 @@
 ---
-title: 'Second post'
+title: 'Since I update the title for first post, it makes sense I do it for the seconed one as well'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
 heroImage: '/Blog/blog-placeholder-4.jpg'

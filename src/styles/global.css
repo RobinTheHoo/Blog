@@ -4,11 +4,11 @@
 }
 
 @font-face {
-	font-family: 'GeneralSans';
+	font-family: 'GeneralSans-Medium';
 	src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Switzer';
+	font-family: 'Switzer-Regular';
 	src: url('/fonts/Switzer-Regular.woff2') format('woff2');
 }
 
@@ -26,8 +26,8 @@
 	--tags: #DBBC7F;
 	--post-text: #A7C080;
 
-    --font-headings: "GeneralSans", Roboto, sans-serif;
-    --font-body: "Switzer", sans-serif;
+    --font-headings: "GeneralSans-Medium", Roboto, sans-serif;
+    --font-body: "Switzer-Regular", sans-serif;
 }
 
 html {
@@ -45,7 +45,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: var(--post-title);
+	color: var(--color-text);
 	line-height: 1.2;
     font-family: var(--font-headings);
 }
@@ -74,13 +74,15 @@ b {
 }
 a {
 	color: var(--tags);
+    text-decoration: none;
 }
 a:hover {
 	color: var(--tags);
+    text-decoration: none;
 }
 p {
 	margin-bottom: 1em;
-	color: var(--post-text);
+	color: var(--color-text);
 }
 .prose p {
 	margin-bottom: 2em;

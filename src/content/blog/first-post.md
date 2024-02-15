@@ -1,5 +1,5 @@
 ---
-title: 'First post'
+title: 'More accurate title for first post, it must be a little longer with punctuations'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
 heroImage: '/Blog/blog-placeholder-3.jpg'

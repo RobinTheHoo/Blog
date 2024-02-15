@@ -11,6 +11,8 @@ body {
 	display: grid;
 	grid-template-rows: auto auto auto auto;
 	grid-template-columns: 1fr 3fr;
+
+	border: 3px solid var(--color-text);
 }
 
 main {	
