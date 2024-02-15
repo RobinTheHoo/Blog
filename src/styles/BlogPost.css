@@ -1,18 +1,7 @@
 body {
-	margin: 0;
-	padding: 0 15%;
-	text-align: left;
-	
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-
-	min-height: 100vh;
-
 	display: grid;
 	grid-template-rows: auto auto auto auto;
 	grid-template-columns: 1fr 3fr;
-
-	border: 3px solid var(--color-text);
 }
 
 main {	

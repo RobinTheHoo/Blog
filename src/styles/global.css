@@ -38,6 +38,19 @@ html {
     background-color: var(--color-bg);
 }
 
+body {
+    margin: 1em 2em;
+	padding: 0;
+	text-align: left;
+	
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+
+	min-height: 100vh;
+
+	border: 3px solid var(--color-text);
+}
+
 h1,
 h2,
 h3,

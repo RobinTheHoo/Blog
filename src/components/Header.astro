@@ -4,13 +4,11 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<nav>
-		<h2 class="site-title"><a href="/Blog/">{SITE_TITLE}</a></h2>
-		<!-- <div class="internal-links">
-			<HeaderLink href="/Blog/">Home</HeaderLink>
-			<HeaderLink href="/Blog/about">About</HeaderLink>
-		</div> -->
-	</nav>
+	<h2 class="site-title"><a href="/Blog/">{SITE_TITLE}</a></h2>
+	<!-- <div class="internal-links">
+		<HeaderLink href="/Blog/">Home</HeaderLink>
+		<HeaderLink href="/Blog/about">About</HeaderLink>
+	</div> -->
 </header>
 <style>
 	header {
@@ -18,11 +16,13 @@ import { SITE_TITLE } from '../consts';
 
 		grid-row: 1;
 		grid-column: 1/3;
+		padding: 1em 0;
 	}
 
 	.site-title {
 		margin: 0;
-		font-size: 2em;
+		font-size: 4em;
+		letter-spacing: 1.2em;
 	}
 
 	h2 a,
