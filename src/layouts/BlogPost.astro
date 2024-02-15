@@ -19,60 +19,6 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				box-shadow: var(--box-shadow);
-			}
-			article{
-				border-bottom: 1px solid var(--gray-1);
-			}
-			.prose {
-				width: 100%;
-				padding: 1em 0;
-			}
-			.author{
-				display: block;
-			}			
-			.title {
-				text-align: left;
-				line-height: 1;
-			}
-			.title h1 {
-				margin-bottom: 0.5em;
-			}
-			.date {
-				margin: 0.5em 0 0.7em 0;
-				color: var(--gray-0);
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-			.tag {
-				display: inline-block;
-				color: var(--pine);
-				margin: 0.3em 1em 0.3em 0;
-			}
-			.other-posts{
-				grid-row: 3;
-				grid-column: 2;
-			}
-			.wrapper{
-				display: flex;
-				justify-content: space-between;
-				
-				flex-wrap: wrap;
-			}
-			.post{
-				max-width: 40%;
-			}
-
-		</style>
 	</head>
 
 	<body>
@@ -86,8 +32,8 @@ const posts = (await getCollection('blog')).sort(
 				<div class="title">
 					<h1>{title}</h1>
 					<div class="post-metadata">
-						<span class="author">{author}</span>
-						<span class="divider">|</span>
+						<div class="author">{author}</div>
+						<div class="divider">|</div>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
@@ -117,7 +63,7 @@ const posts = (await getCollection('blog')).sort(
 				
 		<aside class="other-posts">
 			<h3>See Also</h2>
-			<div class="wrapper">
+			<div class="other-posts-wrapper">
 				{
 					posts.slice(0,2).map((post) => (
 						<div class="post">

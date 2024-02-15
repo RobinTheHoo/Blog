@@ -13,9 +13,31 @@ main {
 
 .post-metadata {
 	display: flex;
-	flex: row;
+	flex-direction: row;
 	padding-right: 1em;
 	color: var(--muted);
+}
+
+.title {
+	text-align: left;
+	line-height: 1;
+}
+
+.title h1 {
+	margin-bottom: 0.5em;
+}
+
+.date {
+	margin: 0.5em 0 0.7em 0;
+}
+
+.last-updated-on {
+	font-style: italic;
+}
+
+.tag {
+	color: var(--pine);
+	margin: 0.3em 1em 0.3em 0;
 }
 
 .post-content {
@@ -29,7 +51,30 @@ main {
 
 .other-posts {
 	max-width: 70%;
+	grid-row: 3;
+	grid-column: 2;
 }
+
+.other-posts-wrapper{
+	display: flex;
+	justify-content: space-between;
+	
+	flex-wrap: wrap;
+}
+
+.post{
+	max-width: 40%;
+}
+
+article{
+	border-bottom: 1px solid var(--gray-1);
+}
+
+.prose {
+	width: 100%;
+	padding: 1em 0;
+}			
+
 
 footer{
 	grid-row: 4;
