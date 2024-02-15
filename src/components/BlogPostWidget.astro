@@ -7,6 +7,10 @@ const allPosts = await getCollection('blog');
 {
     allPosts.map((post) => (              
         <div class="blog-post-container">
+            
+            <a href={`/Blog/blog/${post.slug}/`}>
+                <h3>{post.data.title}</h3>
+            </a>
             <div class="blog-meta-container">
                 <p class="blog-meta">
                     <FormattedDate date={post.data.pubDate} />
@@ -20,10 +24,8 @@ const allPosts = await getCollection('blog');
                 ))
             }
             </div>
-            <a href={`/Blog/blog/${post.slug}/`}>
-                <h3>{post.data.title}</h3>
-                <p>{post.data.description}</p>
-            </a>         
+            <p>{post.data.description}</p>               
+                   
         </div>                  
     ))
 }

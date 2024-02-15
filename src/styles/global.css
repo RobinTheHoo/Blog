@@ -71,8 +71,8 @@ body {
 	min-height: 100vh;
 
 	/* border-top: 3px solid var(--subtle); */
-	border-left: 3px solid var(--subtle);
-	border-right: 3px solid var(--subtle);
+	border-left: 1px solid var(--subtle);
+	border-right: 1px solid var(--subtle);
 }
 
 h1,
