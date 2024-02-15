@@ -9,8 +9,9 @@ const allPosts = await getCollection('blog');
         <div class="blog-post-container">
             <div class="blog-meta-container">
                 <p class="blog-meta">
-                    <FormattedDate date={post.data.pubDate} /> |
+                    <FormattedDate date={post.data.pubDate} />
                 </p>
+                <p class="blog-meta">|</p>
                 {
                     post.data.tags.map((tag) => (
                         <p class="blog-meta">{tag}</p>
