@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+@font-face {
+	font-family: 'GeneralSans';
+	src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Switzer';
+	src: url('/fonts/Switzer-Regular.woff2') format('woff2');
+}
+
+:root {
+	--color-bg: #100f0f;
+    --color-text: #FCECEC;
+
+	--bg-1: #374145;
+	--bg-green: #3C4841;
+	--post-title: #E69875;
+	--gray-0: #7A8478;
+	--gray-1: #859289;
+	--accent-color: #D699B6;
+	--author: #E67E80;
+	--tags: #DBBC7F;
+	--post-text: #A7C080;
+
+    --font-headings: "GeneralSans", Roboto, sans-serif;
+    --font-body: "Switzer", sans-serif;
+}
+
+html {
+    font: 16px/28px var(--font-body);
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--post-title);
+	line-height: 1.2;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.3em;
+}
+h6 {
+	font-size: 1.2em;
+}

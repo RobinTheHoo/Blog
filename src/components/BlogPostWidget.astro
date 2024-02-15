@@ -7,12 +7,12 @@ const allPosts = await getCollection('blog');
 {
     allPosts.map((post) => (
         <a href={`/Blog/blog/${post.slug}/`}>
+            <hr/>
             <h3>{post.data.title}</h3>
             <p class="date">
                 <FormattedDate date={post.data.pubDate} />
             </p>
-            <p>{post.data.author}</p>
-            <hr/>
+            <p>{post.data.author}</p>           
         </a>
     ))
 }
