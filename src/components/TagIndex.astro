@@ -9,9 +9,19 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
     
     {
         tags.map((tag) => (
-          <p class="tag">
-            <a href={`/Blog/tags/${tag}`}>{tag}</a>
-          </p>
+          <ul class="tags-list">
+            <li class="tag">
+              <a href={`/Blog/tags/${tag}`}>{tag}</a>
+            </li>
+          </ul>
         ))
       }
 </nav>
+
+<style>
+  .tags-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+</style>

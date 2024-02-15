@@ -15,7 +15,8 @@ const allPosts = await getCollection('blog');
                     <p class="blog-meta">{post.data.author}</p>
                 </div>
                 <p class="blog-meta">{post.data.tags}</p>
-                <h3>{post.data.title}</h3>               
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>            
             </div>           
         </a>
     ))

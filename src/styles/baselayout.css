@@ -10,7 +10,7 @@ main {
 	grid-row: 2;
 	grid-column: 2;
 
-	padding-right: 2.5em;
+	padding-right: 5em;
 }
 
 .tag-index {
@@ -25,7 +25,7 @@ main {
 }
 
 .blog-post-container {
-	margin-bottom: 6em;
+	margin-bottom: 8em;
 }
 
 .blog-meta-container {
