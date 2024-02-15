@@ -16,7 +16,7 @@ const allPosts = await getCollection('blog');
             <div class="blog-tag-container">
             {
                 post.data.tags.map((tag) => (
-                    <p class="blog-meta">tag</p>
+                    <p class="blog-meta">{tag}</p>
                 ))
             }
             </div>
