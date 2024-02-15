@@ -11,17 +11,15 @@ const allPosts = await getCollection('blog');
                 <h3>{post.data.title}</h3>               
                 <div class="blog-meta-container">
                     <p class="blog-meta">
-                        <FormattedDate date={post.data.pubDate} />
+                        <FormattedDate date={post.data.pubDate} /> |
                     </p>
-                    <p class="blog-meta">{post.data.author}</p>
+                    {
+                        post.data.tags.map((tag) => (
+                            <p class="blog-meta">{tag}</p>
+                        ))
+                    }
                 </div>
-                <div class="blog-tag-container">
-                {
-                    post.data.tags.map((tag) => (
-                        <p class="blog-meta">{tag}</p>
-                    ))
-                }
-                </div>
+                
                 <p>{post.data.description}</p>               
             </a>     
         </div>                  

@@ -40,17 +40,14 @@ const { posts } = Astro.props;
                     <p class="blog-meta">
                         <FormattedDate date={post.data.pubDate} />
                     </p>
-                    <p class="blog-meta">{post.data.author}</p>
-                  </div>
-                  <div class="blog-tag-container">
-                  {
+                    {
                       post.data.tags.map((tag) => (
                           <p class="blog-meta">{tag}</p>
                       ))
-                  }
+                    }
                   </div>
                 </a>         
-            </div>                  
+            </div>             
           ))
       }
     </main>
