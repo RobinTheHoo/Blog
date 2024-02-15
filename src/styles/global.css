@@ -31,9 +31,9 @@
 }
 
 html {
-    font: 16px/28px var(--font-body);
+    font: 18px/28px var(--font-body);
     text-rendering: optimizeLegibility;
-    line-height: 1.2;
+    line-height: 1.5;
     color: var(--color-text);
     background-color: var(--color-bg);
 }
