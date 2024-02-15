@@ -36,6 +36,7 @@ main {
 .blog-meta {
 	color: var(--muted);
 	padding-right: 1em;
+	margin: 0 0 .3em 0;
 }
 
 footer {

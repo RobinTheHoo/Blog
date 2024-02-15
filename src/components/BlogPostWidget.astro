@@ -5,19 +5,25 @@ import FormattedDate from "./FormattedDate.astro";
 const allPosts = await getCollection('blog');
 ---
 {
-    allPosts.map((post) => (       
-        <a href={`/Blog/blog/${post.slug}/`}>
-            <div class="blog-post-container">
-                <div class="blog-meta-container">
-                    <p class="blog-meta">
-                        <FormattedDate date={post.data.pubDate} />
-                    </p>
-                    <p class="blog-meta">{post.data.author}</p>
-                </div>
-                <p class="blog-meta">{post.data.tags}</p>
+    allPosts.map((post) => (              
+        <div class="blog-post-container">
+            <div class="blog-meta-container">
+                <p class="blog-meta">
+                    <FormattedDate date={post.data.pubDate} />
+                </p>
+                <p class="blog-meta">{post.data.author}</p>
+            </div>
+            <div class="blog-tag-container">
+            {
+                post.data.tags.map((tag) => (
+                    <p class="blog-meta">tag</p>
+                ))
+            }
+            </div>
+            <a href={`/Blog/blog/${post.slug}/`}>
                 <h3>{post.data.title}</h3>
-                <p>{post.data.description}</p>            
-            </div>           
-        </a>
+                <p>{post.data.description}</p>
+            </a>         
+        </div>                  
     ))
 }

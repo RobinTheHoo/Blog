@@ -6,7 +6,7 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 <nav class="tag-index">
     <h2>Tags</h2>
-    <ul class="tags-list"></ul>
+    <ul class="tags-list">
     {
       tags.map((tag) => (
         
