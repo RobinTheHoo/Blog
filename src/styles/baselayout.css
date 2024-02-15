@@ -56,6 +56,15 @@ main {
 	margin: 0 0 .3em 0;
 }
 
+.blog-tag-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-post-container:hover > h2{
+	color: var(--subtle);
+}
+
 footer {
 	grid-row: 3;
 	grid-column: 1/3;
