@@ -46,6 +46,20 @@
 	--tags: #DBBC7F;
 	--post-text: #A7C080;
 
+	--base: #191724;
+	--surface: #26233a;
+	--overlay: #26233a;
+	--muted: #6e6a86;
+	--subtle: #908caa;
+	--text: #e0def4;
+	--love: #eb6f92;
+	--gold: #f6c177;
+	--rose: #ebbcba;
+	--pine: #31748f;
+	--foam: #9ccfd8;
+	--iris: #c4a7e7;
+	
+
     --font-headings: "UncutSans-Bold", Roboto, sans-serif;
     --font-body: "UncutSans-Regular", sans-serif;
 	--font-display: "NeueKonstantGrotesk-Book", sans-serif;
@@ -56,8 +70,8 @@ html {
     font: 18px/28px var(--font-body);
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--text);
+    background-color: var(--base);
 }
 
 body {
@@ -70,7 +84,7 @@ body {
 
 	min-height: 100vh;
 
-	border: 3px solid var(--color-text);
+	border: 3px solid var(--subtle);
 }
 
 h1,
@@ -80,7 +94,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: var(--color-text);
+	color: var(--text);
 	line-height: 1.2;
     font-family: var(--font-headings);
 }
@@ -108,35 +122,35 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--tags);
+	color: var(--gold);
     text-decoration: none;
 }
 a:hover {
-	color: var(--tags);
+	color: var(--gold);
     text-decoration: none;
 }
 p {
 	margin-bottom: 1em;
-	color: var(--color-text);
+	color: var(--text);
 }
 .prose p {
 	margin-bottom: 2em;
 }
 
 ul {
-	color: var(--post-text);
+	color: var(--text);
 }
 
 ul::marker {
-	color: var(--post-text);
+	color: var(--text);
 }
 
 ol {
-	color: var(--post-text);
+	color: var(--text);
 }
 
 ol::marker {
-	color: var(--post-text);
+	color: var(--text);
 }
 
 textarea {
@@ -156,7 +170,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: var(--bg-1);
+	background-color: var(--muted);
 	border-radius: 2px;
 }
 pre {
@@ -167,14 +181,14 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--bg-green);
+	border-left: 4px solid var(--overlay);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
 }
 hr {
 	border: none;
-	border-top: 1px solid var(--gray-1);
+	border-top: 1px solid var(--subtle);
 }
 
 @media (max-width: 720px) {
