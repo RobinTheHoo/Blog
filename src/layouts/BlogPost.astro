@@ -9,7 +9,7 @@ import '../styles/BlogPost.css';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, author, tags } = Astro.props;
+const { title, description, pubDate, author, tags } = Astro.props;
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()

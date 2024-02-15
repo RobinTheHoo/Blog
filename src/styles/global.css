@@ -13,23 +13,23 @@
 }
 @font-face {
 	font-family: 'Tiltorion';
-	src: url('/fonts/Tiltorion.otf');
+	src: url('/fonts/Tiltorion.otf') format('otf');
 }
 @font-face {
 	font-family: 'FUNGIS Regular';
-	src: url('/fonts/FUNGIS Regular.woff2');
+	src: url('/fonts/FUNGIS Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'UncutSans-Regular';
-	src: url('/fonts/UncutSans-Regular.woff2');
+	src: url('/fonts/UncutSans-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'UncutSans-Bold';
-	src: url('/fonts/UncutSans-Bold.woff2');
+	src: url('/fonts/UncutSans-Bold.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'NeueKonstantGrotesk-Book';
-	src: url('/fonts/NeueKonstantGrotesk-Book.otf');
+	src: url('/fonts/NeueKonstantGrotesk-Book.otf') format('otf');
 }
 
 :root {
