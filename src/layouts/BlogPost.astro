@@ -9,7 +9,7 @@ import '../styles/BlogPost.css';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, author, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, author, tags } = Astro.props;
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -114,6 +114,13 @@ const posts = (await getCollection('blog')).sort(
 						<span class="divider">|</p>
 						<div class="date">
 							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
 						</div>						
 					</div>												
 					<hr />
