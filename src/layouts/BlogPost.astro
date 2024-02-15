@@ -27,27 +27,19 @@ const posts = (await getCollection('blog')).sort(
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				/* border-radius: 12px; */
 				box-shadow: var(--box-shadow);
 			}
 			article{
-				/* width: 1020px;
-				max-width: calc(100% - 2em);
-				margin: 0 auto; */
-
 				border-bottom: 1px solid var(--gray-1);
 			}
 			.prose {
 				width: 100%;
 				padding: 1em 0;
-				/* color: rgb(var(--gray-dark)); */
 			}
 			.author{
 				display: block;
 			}			
 			.title {
-				/* margin-bottom: 1em; */
-				/* padding: 1em 0; */
 				text-align: left;
 				line-height: 1;
 			}
@@ -63,39 +55,23 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.tag {
 				display: inline-block;
-				color: var(--tags);
+				color: var(--pine);
 				margin: 0.3em 1em 0.3em 0;
 			}
 			.other-posts{
-				/* max-width: 100%;
-				width: calc(100% - 2em);
-				margin: 0 0 3em 0;
-				padding: 0 1em; */
 				grid-row: 3;
 				grid-column: 2;
-			}
-			section > h3{
-				/* width: 1020px;
-				max-width: calc(100% - 2em);
-				margin: 0 auto 1em auto; */
-				
 			}
 			.wrapper{
 				display: flex;
 				justify-content: space-between;
 				
-				/* width: 1020px;
-				max-width: calc(100% - 2em);
-				margin: 0 auto; */
-				
 				flex-wrap: wrap;
 			}
 			.post{
-				max-width: 30%;
+				max-width: 40%;
 			}
-			.post > img{
 
-			}
 		</style>
 	</head>
 
@@ -111,7 +87,7 @@ const posts = (await getCollection('blog')).sort(
 					<h1>{title}</h1>
 					<div class="post-metadata">
 						<span class="author">{author}</span>
-						<span class="divider">|</p>
+						<span class="divider">|</span>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
